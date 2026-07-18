@@ -1,0 +1,145 @@
+/* responsive banner starts here */
+@media (max-width: 992px){
+    #blog-banner-section {
+        flex-direction: column;
+    }
+
+    #blog-banner-section article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3rem;
+    }
+
+    .card-container {
+        width: 50%;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    
+}
+@media (max-width: 768px){
+
+
+    html {
+        font-size: 55.5%;
+    }
+
+    .card-container {
+        width: 80%;
+    }
+
+    #blog-banner-section article {
+        width: 80%;
+    }
+
+    #archives {
+        min-height: auto;
+    }
+
+    .main-div {
+        flex-direction: column;
+        margin-bottom: 3rem;
+        width: 80%;
+    }
+
+    #contact-srction {
+        min-height: auto;
+    }
+
+}
+@media (max-width: 600px){
+
+    #menu-icon {
+        display: block;
+        margin-top: 1.5rem;
+        cursor: pointer;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .main-div {
+        
+        width: 90%;
+    }
+
+    html {
+        font-size: 48.5%;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    .card-container {
+        width: 90%;
+    }
+
+    .banner-heading {
+        margin-top: 1rem;
+        background-color: tomato;
+        color: black;
+    }
+
+    nav ul {
+        padding-left: 2.5rem;
+    }
+
+    #blog-banner-section {
+        width: 90%;
+    }
+
+    .banner-img {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        min-width: 100%;
+        height: 200px;
+        padding-left: 7rem;
+        display: flex;
+    }
+
+    #blog-about {
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    nav li {
+        display: block;
+        margin-right: 0;
+        margin: 1rem 0;
+    }
+
+    .banner-descripion {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #contact-srction {
+        width: 100%;
+    }
+
+    .form-control {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-control label {
+        margin-bottom: 0.5rem;
+        
+    }
+
+    .contact-btn {
+        width: 15rem;
+    }
+
+}
+
+@media (max-width: 400px){
+    
+}
+/* responsive banner ends here */

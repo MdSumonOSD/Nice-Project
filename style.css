@@ -1,0 +1,472 @@
+/* reset code and code starts here */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    outline: 0;
+    font-weight: 400;
+}
+
+html {
+    background-color: aliceblue;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: #fff;
+    width: 120rem;
+    max-width: 100%;
+    margin: auto;
+    box-shadow: 0 0 0.3rem 0.1rem tomato;
+    /* max-width: 100%; */
+}
+/* reset code and code ends here */
+
+/* header starts here */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 2rem 1rem;
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    min-height: 5vh;
+}
+
+.logo-figure {
+    border: 1px solid white;
+}
+
+.logo {
+    font-size: 4rem;
+}
+
+#menu-icon {
+    display: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 2rem;
+    padding: 1rem;
+    transition: all 0.4s;
+}
+
+nav li:last-child {
+    margin-right: 0;
+}
+
+nav li:hover {
+    background-color: rgba(137, 43, 226, 0.822);
+    border-radius: 0.5rem;
+
+}
+
+.nav-link {
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+}
+/* header starts here */
+
+/* banner section starts here */
+#blog-banner-section {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55vh;
+}
+
+#blog-banner-section article {
+    flex-basis: 50%;
+    margin: 1rem;
+}
+
+.banner-img {
+    min-width: 100%;
+}
+
+#blog-auto {
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#blog-banner-section aside {
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.banner-descripion {
+    font-size: 1.5rem;
+}
+
+.banner-img {
+    width: 40rem;
+    height: 40rem;
+}
+
+.banner-heading {
+    background-color: black;
+    color: white;
+    display: inline-block;
+    padding: 1.8rem;
+    font-size: 2rem;
+}
+
+
+.section-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+/* banner scetion ends here */
+
+/* about-me section stsrts here */
+.secton-heading {
+    font-size: 8rem;
+    font-family: "Italianno", cursive;
+    color: white;
+    text-align: center;
+}
+
+#blog-about {
+    background-color: rgb(131, 128, 128);
+    padding: 5rem 1rem;
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    flex: 1;
+    background-color: rgb(226, 226, 226);
+    padding: 3rem 1rem;
+    font-size: 2rem;
+    margin: 2rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s;
+}
+
+.card:hover { 
+    transform: scale(1.1)
+}
+
+.card-heading {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.card-description {
+    padding: 0.4rem 0;
+    text-align: justify;
+    font-size: 1.6rem;
+    margin-bottom: 5rem;
+}
+.card-btn {
+    align-self: center;
+    width: 80%;
+}
+
+.btn {
+    background-color: coral;
+    border: none;
+    border-radius: 0.4rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem black;
+    padding: 1rem 0;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+/* about-me section stsrts here */
+
+
+/* archive starts here  */
+#archives {
+    padding: 5rem 1rem;
+    min-width: 95vh;
+}
+
+.archives-contaciner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    border-top: 0.1rem solid;
+    border-bottom: 0.1rem solid;
+}
+
+.archives-container-lists {
+    display: flex;
+    text-align: center;
+}
+
+.archives-container-list {
+    margin: 2rem;
+    border-radius: 2rem;
+}
+
+.secton-heading-s {
+    text-align: center;
+    font-size: 8rem;
+    font-family: "Italianno", cursive;
+    color: black;
+}
+
+.archives-img {
+    border: 1px solid white;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.7rem;
+    transition:  transform 0.6s;
+}
+
+.archives-img:hover {
+    transform: scale(1.1);
+}
+
+/* archive ends here  */
+
+/* blog-posts starts here */
+#card-2 {
+    padding: 5rem 1rem;
+    min-height: 95vh;
+}
+
+#card-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog-posts {
+    text-align: center;
+    font-size: 8rem;
+    font-family: "Italianno", cursive;
+    margin-bottom: 5rem;
+}
+
+.main-div {
+    width: 70%;
+    display: flex;
+    margin: 1rem 0;
+    box-shadow: 0.1rem 0.1rem 0.1rem #222, -0.1rem 0 0.1rem #222;
+    transition: transform 1s;
+
+}
+
+.main-div:hover {
+    transform: scale(1.1);
+}
+
+.blog-post-aside {
+    flex: 1;
+}
+
+.card-article {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem;
+    margin-left: 2rem;
+}
+
+.blag-1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.Sub-heading {
+    padding-bottom: 1rem;
+    font-size: 1.6rem;
+}
+
+.card-p {
+    font-size: 1.4rem;
+}
+
+.card-button {
+    background-color: orange;
+    border: none;
+    padding: 1.1rem;
+    border-radius: 0.4rem;
+    font-weight: 700;
+    width: 30%;
+    margin-top: 1.5rem;
+}
+
+.blog-img {
+    width: 100%;
+    height: 100%;
+}
+/* blog-posts ends here */
+
+/* contact section starts here */
+#contact-srction, .section-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.blog-posts {
+    text-align: center;
+    font-size: 8rem;
+    font-family: "Italianno", cursive;
+    margin-top: 8rem;
+    /* color: #fff; */
+}
+#contact-srction {
+    background-color: rgb(86, 79, 131);
+    min-height: 90vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-1 {
+    padding: 1rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem #222, -0.1rem 0 0.1rem #222; 
+    margin: 1rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(84, 75, 153);
+    /* transition: transform 1s */
+}
+
+#contact-1:hover {
+    box-shadow: 0 0 0.9rem 0.5rem rgb(11, 139, 33);
+    /* transform: scale(1.1); */
+}
+
+.form-control {
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-control label {
+    font-size: 1.9rem;
+    flex: 0.3;
+}
+
+input, textarea {
+    flex: 0.9;
+    font-size: 2rem;
+    border: none;
+    border-radius: 0.4rem;
+    padding: 2rem 1rem;
+}
+
+textarea {
+    resize: none;
+    height: 12vh;
+}
+
+.contact-btn {
+    width: 30%;
+}
+
+.btn-btn-9 {
+    display: flex;
+    justify-content: flex-end;
+}
+/* contact section starts here */
+footer {
+    background-color: rgb(49, 48, 49);
+}
+
+.footerContainer {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 10vh;
+    align-items: center;
+    text-align: center;
+}
+
+.socialicons a {
+    font-size: 2rem;
+    margin: 8px;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 100px;
+    text-align: center;
+}
+
+.socialicons a:hover {
+    /* background-color: rgb(156, 25, 51);
+    color: #fff;
+    transition: 0.5s; */
+    padding: 6.8px;
+}
+
+.footerBottom {
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+#btns1:hover {
+    background-color: blue;
+    color: white;
+}
+
+#btns2:hover {
+    background-color: fuchsia;
+    color: white;
+}
+
+#btns3:hover {
+    background-color: rgba(255, 0, 0, 0.356);
+    color: white;
+}
+
+#btns4:hover {
+    background-color: orange;
+    color: white;
+}
+
+#btns5:hover {
+    background-color: red;
+    color: white;
+}
+
+
+/* #footer-item .soun .main2 {
+      
+} */
+
+
+
+
